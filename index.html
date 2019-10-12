@@ -1,0 +1,128 @@
+<html>
+
+<head>
+    <meta http-equiv="Content-language" content="cs">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/css/reveal.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/css/theme/serif.min.css">
+    <script src="https://cdn.jsdelivr.net/reveal.js/3.0.0/lib/js/head.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/js/reveal.js"></script>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/atom-one-light.min.css">
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/plugin/highlight/highlight.js"></script> -->
+
+</head>
+
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <section>
+                <p> Na Svitavsku se čelně srazil kamion s osobním autem</p>
+
+
+                <section>
+                    <img src="kamion.PNG" alt="">
+
+
+                </section>
+                <section>
+                    <img src="f-kamion1.jpg" alt="">
+
+                </section>
+                <section>
+                    <img src="fkamion2.jpg" alt="">
+
+                </section>
+                <section>
+                    <img src="fkamion3.jpg" alt="">
+                </section>
+                <section>
+                    <img src="fkamion4.jpg" alt="">
+                </section>
+
+            </section>
+            <section data-markdown>
+                <textarea data-template>
+                    ## Page title 
+            
+                    A paragraph with some text and a [link](http://hakim.se).
+                    ```js
+                    let a = "ahoj";
+                    ```
+                </textarea>
+            </section>
+            <section>
+                <section data-markdown="jscode.md">
+                </section>
+                <section data-markdown="tscode.md">
+                </section>
+            </section>
+            <section>
+                <section data-markdown="javacode.md">
+                </section>
+            </section>
+
+
+            <section>
+                <pre><code class="hljs" data-line-numbers="4,8-11">
+                    import React, { useState } from 'react';
+                     
+                    function Example() {
+                      const [count, setCount] = useState(0);
+                     
+                      return (
+                        <div>
+                          <p>You clicked {count} times</p>
+                          
+                        </div>
+                      );
+                    }
+                    </code></pre>
+            </section>
+            <section>
+                <p>Řidič na Svitavsku nepřežil srážku v protisměru</p>
+                <section>
+                    <img src="auto.PNG" alt="">
+
+                </section>
+                <section>
+                    <img src="fauto1.jpg" alt="">
+
+                </section>
+            </section>
+            <section>
+                <section>
+                    <img src="stat.jpg" alt="">
+
+                </section>
+                <section>
+                    <img src="volby2017.PNG" alt="">
+
+                </section>
+            </section>
+            <!-- <section>
+                <iframe
+                    src="http://mapy.idnes.cz/#pos=49.782565348194481P16.492301858633738P12&ma=49.789658591903162,16.480628885000897,red:"
+                    frameborder="0" height="500" width="800"></iframe>
+            </section> -->
+        </div>
+    </div>
+    <script>
+        Reveal.initialize({
+            markdown: {
+                smartypants: true
+            },
+            dependencies: [
+                // Interpret Markdown in <section> elements
+
+                { src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/plugin/markdown/marked.js', condition: function () { return !!document.querySelector('[data-markdown]'); } },
+                { src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/plugin/markdown/markdown.min.js', condition: function () { return !!document.querySelector('[data-markdown]'); } },
+
+                // Syntax highlight for <code> elements
+                { src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/plugin/highlight/highlight.min.js', async: true, callback: function () { hljs.initHighlightingOnLoad(); } },
+            ]
+        });
+    </script>
+
+</body>
+
+</html>
