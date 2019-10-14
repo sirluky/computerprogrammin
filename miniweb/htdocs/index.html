@@ -9,6 +9,23 @@
     <script src="static/reveal.js"></script>
     <link rel="stylesheet" href="static/atom-one-light.min.css">
     <!-- <script src="static/highlight.js"></script> -->
+    <style>
+        .reveal p {
+            text-align: left;
+        }
+
+        html .slide-background {
+            opacity: 0.32 !important;
+        }
+
+        html .fo.slide-background {
+            opacity: 1 !important;
+        }
+
+        .fo .slide-background {
+            opacity: 1 !important;
+        }
+    </style>
 
 </head>
 
@@ -18,98 +35,46 @@
             <section>
                 <h1>Computer Programming</h1>
             </section>
-            <section>
-                <b>Computer programming</b> is the process of designing and building an executable computer program for
-                accomplishing a specific computing task.
-                <p> Programming involves tasks such as: analysis, generating algorithms, profiling algorithms' accuracy
-                    and resource consumption, and the implementation of algorithms in a chosen programming language
-                    (commonly referred to as coding).</p>
+            <section data-markdown="intro.md">
             </section>
             <section>
-                <p> Na Svitavsku se čelně srazil kamion s osobním autem</p>
-
-
-                <section>
-                    <img src="kamion.PNG" alt="">
-
-
+                <section data-markdown="history.md">
                 </section>
-                <section>
-                    <img src="f-kamion1.jpg" alt="">
-
-                </section>
-                <section>
-                    <img src="fkamion2.jpg" alt="">
-
-                </section>
-                <section>
-                    <img src="fkamion3.jpg" alt="">
-                </section>
-                <section>
-                    <img src="fkamion4.jpg" alt="">
+                <section data-markdown="history/1.md">
                 </section>
 
-            </section>
-            <section data-markdown>
-
-                <textarea data-template>
-                    ## Page title 
-            
-                    A paragraph with some text and a [link](http://hakim.se).
-                    ```js
-                    let a = "ahoj";
-                    ```
-                </textarea>
-            </section>
-            <section>
+                <section data-markdown="history/3.md">
+                </section>
+                <!-- <section data-markdown="history/4.md">
+                </section> -->
+                <section data-markdown="history/5.md" data-background="php.png">
+                </section>
+                <section data-markdown="history/6.md" data-background="java.jpg">
+                </section>
+                <section data-markdown="history/7.md" data-background="js.png">
+                </section>
                 <section data-markdown="jscode.md">
+                </section>
+                <section data-markdown="javacode.md">
                 </section>
                 <section data-markdown="tscode.md">
                 </section>
-            </section>
-            <section>
-                <section data-markdown="javacode.md">
-                </section>
+
             </section>
 
+            <section class="fo">
+                <section data-markdown="thereismore.md"> </section>
+                <section data-background-iframe="https://en.wikipedia.org/wiki/List_of_programming_languages"></section>
 
-            <section>
-                <pre><code class="hljs" data-line-numbers="4,8-11">
-                    import React, { useState } from 'react';
-                     
-                    function Example() {
-                      const [count, setCount] = useState(0);
-                     
-                      return (
-                        <div>
-                          <p>You clicked {count} times</p>
-                          
-                        </div>
-                      );
-                    }
-                    </code></pre>
             </section>
-            <section>
-                <p>Řidič na Svitavsku nepřežil srážku v protisměru</p>
-                <section>
-                    <img src="auto.PNG" alt="">
+            <section data-markdown="final.md">
 
-                </section>
-                <section>
-                    <img src="fauto1.jpg" alt="">
-
-                </section>
             </section>
-            <section>
-                <section>
-                    <img src="stat.jpg" alt="">
 
-                </section>
-                <section>
-                    <img src="volby2017.PNG" alt="">
 
-                </section>
-            </section>
+
+
+
             <!-- <section>
                 <iframe
                     src="http://mapy.idnes.cz/#pos=49.782565348194481P16.492301858633738P12&ma=49.789658591903162,16.480628885000897,red:"
@@ -131,6 +96,10 @@
                 // Syntax highlight for <code> elements
                 { src: 'static/highlight.min.js', async: true, callback: function () { hljs.initHighlightingOnLoad(); } },
             ]
+        });
+
+        Reveal.addEventListener('fullopacity', function () {
+            // Called each time the slide with the "stats" state is made visible
         });
     </script>
 
